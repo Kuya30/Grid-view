@@ -1,58 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+    <title>Grid-area</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-
-    * {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    /* this is declaration of a class */
-    .item1 { grid-area: header;}
-    .item2 { grid-area: menu;}
-    .item3 { grid-area: main;}
-    .item4 { grid-area: right;}
-    .item5 { grid-area: footer;}
-
-    /* this is a Whole <div> style */
-    .grid-container {
-        display: grid;
-        grid-template-areas: 'header header header header header' 'menu main  main main right' 'menu footer footer footer footer';
-        gap: 10px;
-        background-color: gray;
-        padding: 10px;
-    }
-
-    /* this is a <di> child style */
-    .grid-container > div {
-        background-color: lightgray;
-        padding: 20px;
-    }
-
-    .item2 > ul {
-        list-style-type: none;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    p::first-letter {
-        font-size: xx-large;
-    }
- 
-    </style>
+    <link rel="stylesheet" href="Col-style.css">
     </head>
     <body>
       <div class="grid-container">
         <div class="item1">
-            <h1> Arcticle</h1>
             <article>
-                This page shares my best articles to read on topics like health,
-                happiness, creativity, productivity and more.
-                The central question that drives my work is, “How can we live better?” To answer that question,
-                I like to write about science-based ways to solve practical problems.
+                <h1> Arcticle</h1>
+                <p>
+                    This page shares my best <i style="color:red">articles</i> to read on topics like health,
+                    happiness, creativity, productivity and more.
+                    The central question that drives my work is, “How can we live better?” To answer that question,
+                    I like to write about science-based ways to solve practical problems.
+                </p>
             </article>
         </div>
         <div class="item2">
@@ -61,29 +24,40 @@
                 <li><a href="">Nutrition, diet and disease</a> </li>
                 <li><a href="">Sleep, Health and the Brain</a></li>
                 <li><a href="">War, Conflict and Displacement</a></li>
-                <li><a href="">Climate change: Freshwater and Marine impac</a>t</li>
+                <li><a href="">Climate change: Freshwater and Marine impac</a></li>
                 <li><a href="">Top download Article in 2021</a></li>
             </ul>
         </div>
         <div class="item3">
-            <h1>Which topics generated the most attention from readers in 2019?</h1>
-            <article>
+            
+            <article class="article1">
+                <h1>Which topics generated the most attention from readers in 2019?</h1>
                 <p>
-                In 2019, Annual Reviews published 1,170 review articles across 51 disciplines.
-                The following lists represent the top 10 downloaded articles from our newest volumes
-                that published in 2019 and the 10 articles across all volumes that were most downloaded during 2019.
+                    In 2019, Annual Reviews published 1,170 review articles across 51 disciplines.
+                    The following lists represent the top 10 downloaded articles from our newest volumes
+                    that published in 2019 and the 10 articles across all volumes that were most downloaded during 2019.
                 </p>
             </article>
         </div>
         <div class="item4">
-            <video  width: 100%; controls>
+            <video controls>
                 <source src="https://www.youtube.com/watch?v=rqTkt7dnm34" type="video/mp4">
             </video>
+            <article class="article2">
+                <h6>VIDEO</h6>
+                <p>
+                <b>Video</b> is an electronic medium for the recording, copying, playback, broadcasting,
+                and display of moving visual media.[1] Video was first developed for mechanical television systems,
+                which were quickly replaced by cathode-ray tube (CRT) systems which, in turn,
+                were replaced by flat panel displays of several types.
+                </p>
+           
+            </article>
         </div>
         <div class="item5">
             <footer>
-                <li>@Copyright</li>
-                <li>Address</li>
+                <a>@Cupyright</a>
+                <a>Address</a>
             </footer>
         </div>
       </div>
