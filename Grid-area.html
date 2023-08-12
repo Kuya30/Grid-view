@@ -4,6 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
 
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
     /* this is declaration of a class */
     .item1 { grid-area: header;}
     .item2 { grid-area: menu;}
@@ -23,19 +27,65 @@
     /* this is a <di> child style */
     .grid-container > div {
         background-color: lightgray;
-        text-align: center;
-        padding: 20px 0;
+        padding: 20px;
+    }
+
+    .item2 > ul {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    p::first-letter {
+        font-size: xx-large;
     }
  
     </style>
     </head>
     <body>
       <div class="grid-container">
-        <div class="item1">Header</div>
-        <div class="item2">Menu</div>
-        <div class="item3">Main</div>
-        <div class="item4">Right</div>
-        <div class="item5">Footer</div>
+        <div class="item1">
+            <h1> Arcticle</h1>
+            <article>
+                This page shares my best articles to read on topics like health,
+                happiness, creativity, productivity and more.
+                The central question that drives my work is, “How can we live better?” To answer that question,
+                I like to write about science-based ways to solve practical problems.
+            </article>
+        </div>
+        <div class="item2">
+            <ul>
+                <li><a href="">Top 10 in 2023</a></li>
+                <li><a href="">Nutrition, diet and disease</a> </li>
+                <li><a href="">Sleep, Health and the Brain</a></li>
+                <li><a href="">War, Conflict and Displacement</a></li>
+                <li><a href="">Climate change: Freshwater and Marine impac</a>t</li>
+                <li><a href="">Top download Article in 2021</a></li>
+            </ul>
+        </div>
+        <div class="item3">
+            <h1>Which topics generated the most attention from readers in 2019?</h1>
+            <article>
+                <p>
+                In 2019, Annual Reviews published 1,170 review articles across 51 disciplines.
+                The following lists represent the top 10 downloaded articles from our newest volumes
+                that published in 2019 and the 10 articles across all volumes that were most downloaded during 2019.
+                </p>
+            </article>
+        </div>
+        <div class="item4">
+            <video  width: 100%; controls>
+                <source src="https://www.youtube.com/watch?v=rqTkt7dnm34" type="video/mp4">
+            </video>
+        </div>
+        <div class="item5">
+            <footer>
+                <li>@Copyright</li>
+                <li>Address</li>
+            </footer>
+        </div>
       </div>
     </body>
     </html>
